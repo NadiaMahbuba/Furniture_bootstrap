@@ -1,0 +1,1169 @@
+/* ----------font links part start----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+/* ----------font links part end----------------- */
+/* ------------variable part start----------------- */
+:root{
+    --montserrat:"Montserrat", sans-serif;
+    --primaryColor:#333333 ;
+    --BrandColor:#054C73;
+}
+/* ------------variable part end----------------- */
+
+/* ----media query for extra small device----- */
+
+ /* ----media query for large device---- */
+/* ------------------- font links ------------------ */
+/* ------------------- common css  ------------------- */
+img{
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+a{
+    display:inline-block;
+    text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6,p,ul,ol{
+    margin:0 !important;
+    padding:0 !important;
+}
+.common_head h2{
+    font-size:32px;
+    font-weight:700;
+    font-family:var(--montserrat);
+    color:var(--primaryColor);
+    text-align: center;
+    color:#333333;
+}
+.common_head p{
+    font-size:20px;
+    font-weight:400;
+    font-family:var(--montserrat);
+    color:var(--primaryColor);
+    text-align: center;
+    color:#666666;
+    margin-top: 13px !important;
+}
+/* ------------------- common css -------------------- */
+/* ------------------- navbar links ------------------ */
+    
+   .main_menu{
+    padding-top:30px;
+    padding-bottom:20px;
+    color:#FFFFFF;
+   } 
+   .icon_bar img{
+    height:40px;
+    width:40px;
+   }
+   .main_menu ul{
+    gap:62px;
+   }
+
+.main_menu ul li a{
+font-size:14px;
+font-weight:600;
+font-family:var(--montserrat);
+color:var(--primaryColor) !important;
+position:relative;
+padding:0 !important;
+}
+.main_menu ul li a::before{
+content:'';
+background: var(--BrandColor);
+position:absolute;
+top:100%;
+left:0;
+width:0%;
+height:2px;
+transition:all linear .4s;
+}
+.main_menu ul li a:hover::before{
+width:100%;
+}
+/* ------------------- navbar links ------------------ */
+/* --------banner --------------------------- */
+#banner{
+    background: url('../images/banner.jpg');
+    padding-top:152px;
+    padding-bottom:154px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height:749px;
+}
+.banner_card{
+    display:flex;
+    justify-content: end;
+}
+.banner_card .banner_main_card{
+    width:643px;
+    padding:40px 70px 38px 27px;
+    background: #DFE9F4;
+    border-radius:10px;
+}
+.banner_main_card p:nth-child(1){
+   font-size:16px;
+   font-family: var(--montserrat);
+   font-weight: 600;
+   color:var(--primaryColor);
+   letter-spacing: 3px;
+   margin-bottom:20px !important;
+   margin-top:0px !important;
+}
+.banner_main_card h1{
+color:var(--BrandColor);
+font-family: var(--montserrat);
+font-weight: 700;
+font-size: 52px;
+width:421px;
+}
+.banner_main_card p{
+    font-family:var(--montserrat);
+    font-weight:500;
+    font-size:18px;
+    color:#333333;
+    width:546px;
+    margin-top:20px !important;
+    margin-bottom:30px !important;
+}
+.banner_main_card a button{
+    width:229px;
+    height:70px;
+    border-radius:50px;
+    background: var(--BrandColor);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+    font-weight:700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border:0;
+}
+.banner_main_card a button:hover{
+    background-image: url('../images/furniture_button.jpg');
+    background-size: cover;
+    background-position: center;
+    color:var(--BrandColor);
+    border: 1px solid var(--BrandColor);
+    font-family: "Dancing Script", cursive;
+    font-weight:bolder;
+    box-shadow: 6px 1px 34px -8px var(--BrandColor);
+    display:flex;
+    align-items: flex-start;
+    font-size: 20px;
+    transition: all linear .4s;
+}
+/* --------banner --------------------------- */
+/*------------------ support part-------------*/
+#support{
+    padding-top:46px;
+    padding-bottom: 49px;
+    background:#F2F5FF;
+}
+.single_support{
+    display:flex;
+    align-items: center;
+    gap:27px;
+}
+.single_support .supportImage{
+    width:84px;
+    } 
+.single_support .time_image{
+    width:60px;
+}
+.single_support .shield_image{
+    width:55px;
+}
+.support_Text h2{
+    font-size:24px;
+    font-weight:600;
+    font-family:var(--montserrat);
+    color:var(--primaryColor);
+}
+.support_Text p{
+    font-size:16px;
+    font-weight:600;
+    font-family:var(--montserrat);
+}
+
+/*---------------inspiration------------------*/
+#inspiration{
+    padding-top: 60px;
+}
+.inspiration_row{
+    margin-top:98px !important;
+}
+.inspiration_row .inspiration_image{
+    transition: all linear .4s;
+}
+.inspiration_row .inspiration_image:hover{
+    margin-top:-75px ;
+}
+.inspiration_row .imgtop{
+    overflow:hidden;
+border-top-left-radius: 102px;
+}
+.inspiration_row .imgend{
+    overflow:hidden;
+border-bottom-right-radius:102px;
+}
+/*---------------inspiration-------------*/
+/* ------------beautify------------------- */
+#beautify{
+    background-color: #F2F5FF;
+    padding-top:55px;
+    margin-top:66px;
+    padding-bottom:65px;
+}
+
+.beautify_space{
+margin-top:240px;
+}
+.beautify_space h4{
+    font-size:32px;
+    font-weight:700;
+    color:#333333;
+    font-family: var(--montserrat);
+}
+.beautify_space p{
+    font-size:20px;
+    font-weight:400;
+    color:#666666;
+    font-family: var(--montserrat);
+    margin-top: 20px !important;
+    
+}
+
+.beautify_space a button{
+    font-size:16px;
+    font-weight:700;
+    color:#FFFFFF;
+    background: var(--BrandColor);
+    border-radius: 50px;
+    padding:24px 57px;
+    margin-top:30px;
+    border:0;
+    transition: all linear .4s;
+}
+.beautify_space a button:hover{
+background-image: url('../images/furniture_button.jpg');
+    background-size: cover;
+    background-position: center;
+    color:var(--BrandColor);
+    border: 1px solid var(--BrandColor);
+    font-family: "Dancing Script", cursive;
+    font-weight:bolder;
+    box-shadow: 6px 1px 34px -8px var(--BrandColor);
+    font-size: 20px;}
+.mask_group_img{
+    width:568px;
+    height:750px;
+    margin-left:94px;
+}
+/* ------------beautify------------------- */
+/* ------------range---------------------- */
+#range{
+    padding-top:55px;
+}
+.range_image{
+    position:relative;
+    overflow: hidden;
+}
+.range_image .img_hoverly .flaticons{
+    width:30px;
+    height:30px;
+}
+.range_image .img_hoverly button{
+    background: transparent;
+border:0;
+font-size:25px;
+font-weight:400;
+font-family:"Adamina",serif;
+color:black;
+background:teal ;
+border-radius: 50%;
+padding: 10px;
+border:2px solid coral;
+box-shadow: 0 0 10px coral;
+}
+.range_image .img_hoverly button span{
+    /* 2 */
+    display:none;
+    font-size:18px;
+    font-family: "Big Shoulders Stencil", sans-serif;
+}
+.range_image .img_hoverly button:hover span{
+    display:inline-block;
+}
+.range_image .img_hoverly{
+    /* 3 */
+    width:100%;
+    height:85%;
+   background: #1f509a1d;
+    position:absolute;
+    top:0;
+    left:-100%;
+    transform: scale(0);
+    transition:all linear .4s;
+    border-radius: 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:40px;
+}
+.range_image:hover .img_hoverly{
+    transform:scale(1.1);
+    left:0;
+}
+.range_image .img_hoverly .cart{
+    transition:all 0.6s ease;
+}
+.range_image .img_hoverly .cart:hover{
+    /* 1 */
+width:170px;
+border:0;
+border-radius: 2px;
+background-image: linear-gradient(to right, #D76C82, #FFB8E0);  
+color:white;
+box-shadow: 5px 5px 2px #FFB8E0;
+}
+.range_image .img_hoverly .view{
+    transition:all 0.6s ease;  
+}
+.range_image .img_hoverly .view:hover{
+    width:170px;
+    border:0;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #B7B1F2, #7886C7);  
+    color:white;
+    box-shadow: 5px 5px 2px #7886C7;
+    }
+    .range_image .img_hoverly .heart{
+        transition:all 0.6s ease;   
+    }  
+    .range_image .img_hoverly .heart:hover{
+        width:170px;
+        border:0;
+        border-radius: 2px;
+        background-image: linear-gradient(to right, #D17D98, #FFCF50);  
+        color:white;
+        box-shadow: 5px 5px 2px #FFCF50;
+        }
+        .range_image .img_hoverly .share{
+            transition:all 0.6s ease;  
+        }
+        .range_image .img_hoverly .share:hover{
+            width:170px;
+            border:0;
+            border-radius: 2px;
+            background-image: linear-gradient(to right, #2D336B, #A9B5DF);  
+            color:white;
+            box-shadow: 5px 5px 2px #A9B5DF;
+            }
+.browse_range h2{
+  font-size:32px;
+  font-weight:700px;
+  font-family:var(--montserrat);
+  color:#333333;
+  text-align: center; 
+}
+.browse_range p{
+    font-size:20px;
+    font-weight:400px;
+    font-family:var(--montserrat);
+    color:#666666;
+    text-align: center; 
+    margin-top:20px;
+  }
+.range_image_container{
+    margin-top:50px;
+}
+.range_image p{
+    font-size:24px;
+    font-weight:600px;
+    font-family:var(--montserrat);
+    color:#333333;
+    text-align: center;
+    margin-top:30px !important;
+}
+/* ------------range---------------------- */
+/*------------- work ---------------------*/
+#work{
+    padding-top:121px;
+}
+.work_head h2{
+    font-size:32px;
+    font-weight:700;
+    font-family: var(--montserrat);
+    color:#333333;
+    text-align: center;
+}
+.work_head p{
+  font-size:20px;
+  font-weight:400;
+  font-family: var(--montserrat);
+  color:#666666;
+  text-align:center;
+  margin-top:20px !important;  
+}
+.work_main_part{
+    margin-top:50px;
+} 
+.work_image_container h2{
+    font-size:24px;
+    font-family:var(--montserrat);
+    font-weight:700;
+    color:#333333;
+    margin-top: 30px !important;
+}
+.two_no_parent .men{
+    border-radius: 15px;
+}
+.work_image_container .two_no_parent{
+position:relative;
+}
+/* .work_image_container .two_no{
+width:90px;
+height:90px;
+position:absolute;
+transform:translate(-30%,-54%);
+left:49%;
+
+} */
+ .No{
+  position:absolute; 
+  transform:translate(-40%,-54%);
+  left:49%;
+ }
+ .no_outline{
+    background-color: #FCFCFC;
+    width:90px;
+    height:90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.no_outline .no_inline{
+    background-color: #111111;
+    width:60px;
+    height:60px; 
+    text-align: center;
+display:flex;
+justify-content: center;
+align-self: center;
+border-radius:50%;
+}
+.no_outline .no_inline p{
+    color: #FFFFFF;
+    font-family: var(--montserrat);
+    font-weight:700;
+    font-size:24px;
+}
+.work_image_container .one_no_parent{
+    position:relative;
+}
+.work_image_container .three_no_parent{
+    position:relative;
+}
+
+.work_image_container .ships{
+    margin-top:77px !important;
+}
+.work_image_container p{
+    font-size:18px;
+    font-family:var(--montserrat);
+    font-weight:400;
+    color:#666666;
+    margin-top: 10px !important;
+}
+
+/*------------- work ---------------------*/
+/* -----------mailing----------------*/
+#mailing{
+    background: #F2F5FF;
+    padding-top:59px;
+    margin-top: 194px;
+    padding-bottom:60px;
+}
+.mail_container h2{
+    text-align: center;
+    font-size:32px;
+    font-weight:700;
+    font-family: var(--montserrat);
+    color:#333333;
+}
+.mail_container .mail_text{
+    display:flex;
+    justify-content: center;
+}
+.mail_container .mail_text p{
+    
+    font-size:20px;
+    font-weight:400;
+    font-family: var(--montserrat);
+    color:#666666;
+    margin-top:10px !important;
+    width:514px;
+   text-align: center;
+}
+.mail_container .form {
+   width:486px;
+    height:70px;
+    margin-top:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:410px;
+}
+.mail_container .form input{
+    width:335px;
+    height:70px;
+    outline:0;
+    padding-left: 21px;
+    border:1px solid var(--BrandColor);
+    color:#808080;
+}
+.mail_container .form input::placeholder{
+    font-family:var(--montserrat);
+    font-weight:400;
+    font-size:16px;
+    color:#808080;
+}
+.mail_container .form button{
+    height:70px;
+    background:var(--BrandColor) ;
+    width:153px;
+    border-radius: 3px;
+    border:0;
+    color:#EEEEEE;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size:16px;
+    transition: all linear .4s;
+}
+.mail_container .form button:hover{
+    background-image: url('../images/furniture_button.jpg');
+    background-size: cover;
+    background-position: center;
+    color:var(--BrandColor);
+    border: 1px solid var(--BrandColor);
+    font-family: "Dancing Script", cursive;
+    font-weight:bolder;
+    box-shadow: 6px 1px 34px -8px var(--BrandColor);
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 25px;  
+}
+/* -----------mailing----------------*/
+/* -----------footer-----------------*/
+footer{
+  background:#03344F;
+  color: #FFFFFF;  
+  padding-top:49px;
+  padding-bottom:78px;
+}
+.beauty_care h4{
+    font-size:24px;
+    font-weight:700;
+    font-family:var(--montserrat);
+}
+.beauty_care p{
+    font-size:16px;
+    font-weight:400;
+    font-family:var(--montserrat);
+    margin-top:34px !important;
+}
+.follow{
+    margin-top: 21px !important;
+    text-transform: capitalize;
+}
+.insta_shop h4{
+    font-size: 24px;
+    font-family: var(--montserrat);
+    font-weight:700;
+}
+.insta_shop .instagram_image{
+    margin-top:34px;
+}
+
+@media only screen and (max-width: 575.98px) {
+   /*---- nav bar part start ------*/
+    .main_menu{
+        width:100%;
+    }
+    .main_menu ul{
+        gap:30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       }
+    .main_menu ul li a{
+    font-size:15px;
+    font-weight:600;
+    font-family:var(--montserrat);
+    color:var(--primaryColor) !important;
+    position:relative;
+    padding:0 !important;
+    margin-top: 30px;
+    }
+    .main_menu ul li a:hover{
+        box-shadow:2px 2px 2px 2px var(--BrandColor) ;
+    }
+    /* ----navbar part end -------*/
+    /*---- banner part start -----*/
+    .banner_card .banner_main_card {
+
+        width: 100%;
+    }
+        .banner_main_card h1 {
+          font-size: 24px;
+            width: 100%;
+        }
+        .banner_main_card p:nth-child(1) {
+            font-size: 12px;
+        }
+
+        .banner_main_card p {
+           
+            font-size: 10px;
+            
+            width: 100%;
+        }
+        .banner_main_card a button {
+            width: 134px;
+            height: 49px;
+            border-radius: 27px;
+            font-size: 10px;
+        }
+        .banner_main_card a button:hover{
+            font-size: 16px;
+          }
+        /*----banner part end-----*/
+        /* ---support part start----- */
+        
+        .support_Text h2 {
+            font-size: 18px;}
+
+            .support_Text p {
+                font-size: 12px;}
+                 .small_device_gap_sup{
+                    gap:20px;
+                    
+                }
+                .single_support .supportImage {
+                    width: 61px;
+                  }
+                  .single_support .time_image {
+                    width: 57px;
+                  }
+                  .single_support .shield_image {
+                    width: 52px;
+                  }
+                  .common_head p {
+                    font-size: 15px;}
+
+        /* ---support part end ------*/
+        /* -----inspiration part start---- */
+        #inspiration {
+            padding-top: 36px;
+          }
+        .common_head h2 {
+            font-size: 23px;
+        }
+        .inspiration_row .inspiration_image:hover{
+            margin-top:0px ;
+        }
+        .inspiration_row {
+            margin-top: 28.3px !important;
+            gap:11px;
+        }
+            /* ------inspiration part end------ */
+            /* ---beautify part start------- */
+            .beautify_space h4 {
+                font-size: 23px;}
+                .beautify_space p {
+                    font-size: 15px;}
+                    .beautify_space a button {
+                        font-size: 13px;
+                        padding: 18px 44px;
+                        margin-top: 16px;
+                    }
+                    .mask_group_img {
+                        width: 100%;
+                        height: 100%;
+                        margin-left: 8px;
+                        margin-top: 15px;
+                    }
+                    .beautify_space {
+                        margin-top: 9px;
+                      }
+                      #beautify 
+                      {padding-bottom: 55px;}
+                      .browse_range h2 {
+                        font-size: 23px;}
+                        .browse_range p {
+                            font-size: 15px;
+                        }
+                            .range_image p {
+                                font-size: 15px;
+                                margin-top: 11px !important;
+                                margin-bottom: 15px !important;
+                            }
+                    /* ---beautify part end---- */
+                    .beautify_space a button:hover{
+                        font-size:13px;
+                    }
+                    /*-----work part start  -----*/
+                    .work_head h2 {
+                        font-size: 23px;}
+                        .work_head p {
+                            font-size: 15px;}
+                    /* ----work part end-------- */
+                    .work_image_container h2 {
+                        font-size: 19px;}
+                        .two_no{
+                            width:70px !important;
+                        
+                        }
+                        .work_image_container p {
+                            font-size: 14px;
+                            margin-bottom: 30px !important;}
+                            #work {
+                                padding-top: 46px;
+                              }
+                    
+                              .mail_container h2 {
+                                font-size: 23px;}
+                                .mail_text p {
+                                    font-size: 15px;}
+                                    .mail_container .form {
+                                        width: 303px;
+                                        height: 40px;
+                                        margin-top: 50px;
+                                        margin-left: 0px;
+                                        padding: 10px;
+                                       }
+                                        .mail_container .mail_text p {
+                                            font-size: 15px;}
+                                            .mail_container .form button{
+
+                                                font-size: 12px;
+                                                width:100%;
+                                            }
+                                            #mailing {
+                                                
+                                                padding-top: 59px;
+                                                margin-top: 59px;}
+            .mail_container .form input::placeholder{
+
+    font-size:12px;
+    color:#808080;
+    } 
+.mail_container .form{
+flex-wrap: wrap;
+margin-bottom: 100px;
+padding: 25px;
+margin-left:auto;
+margin-right:auto;
+} 
+.beauty_care h4 {
+    font-size: 20px;
+text-align: center;}
+    .beauty_care p {
+        font-size: 15px;
+    text-align: center;}
+        
+        .follow {
+            margin-top: 13px !important;}
+.insta_shop h4 {
+ font-size: 21px;
+ margin-top: 19px !important;
+ text-align: center;
+ 
+}
+.instagram_image .insta img{
+    width:50%;
+    
+}
+.instagram_image .insta{
+    gap:20px; 
+width: 50%;
+margin:0 auto;
+}
+.range_image .img_hoverly .flaticons{
+    width:20px;
+    height:20px;
+}
+.range_image .img_hoverly button{
+    background: transparent;
+border:0;
+font-size:18px;
+font-weight:400;
+font-family:"Adamina",serif;
+color:black;
+background:teal ;
+border-radius: 50%;
+padding: 10px;
+border:2px solid coral;
+box-shadow: 0 0 10px coral;
+}
+.range_image .img_hoverly button span{
+    
+    
+    font-size:20px;
+
+}
+.range_image .img_hoverly{
+      width:100%;
+border-radius: 50px;
+background: #1f509a11;
+
+}
+.instagram_image .insta .insta1{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+}
+  
+/*------banner part end---------*/
+/* ----media query for extra small device----- */
+/*----- media query for medium device----- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+     /*-------nav bar part start-------*/
+.main_menu{
+    width:100%;
+}
+.main_menu ul{
+    gap:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+.main_menu ul li a{
+font-size: 15px;
+font-weight:600;
+font-family:var(--montserrat);
+color:var(--primaryColor) !important;
+position:relative;
+padding:0 !important;
+margin-top: 30px;
+}
+.main_menu ul li a:hover{
+    box-shadow:5px 5px 5px 2px var(--BrandColor) ;
+}
+/* -----navbar part end ------------*/
+/*------- banner part start -----------*/
+.banner_main_card a button {
+    width: 215px;
+    height: 67px;
+    border-radius: 42px;
+    font-size: 14px;
+}
+/*------- banner part end -----------*/
+/*--------support part start--------*/
+.banner_card .banner_main_card {
+  
+    width: 100%;
+  
+}
+.banner_main_card h1 {
+    font-size: 45px;
+    width: 100%;
+  }
+.banner_main_card p {
+    font-size: 13px;
+    width: 100%;
+}
+.support_Text h2 {
+font-size: 20px;
+}
+.support_Text p {
+font-size: 12px;
+    }
+.inspiration_row .inspiration_image:hover{
+margin-top:0px;
+}
+.small_device_gap_sup{
+    gap:20px;
+    
+}
+.single_support .supportImage {
+    width: 61px;
+  }
+  .single_support .time_image {
+    width: 57px;
+  }
+  .single_support .shield_image {
+    width: 52px;     
+}
+.common_head h2 {
+    font-size: 27px;
+}
+.common_head p {
+    font-size: 18px;
+}
+.inspiration_row {
+    margin-top: 42px !important;
+    gap: 20px;
+  }
+  .beautify_space h4 {
+    font-size: 27px;}
+  .beautify_space {
+    margin-top: 19px;
+  }
+  .beautify_space p {
+    font-size: 18px;
+}
+.beautify_space a button {
+    font-size: 15px;
+    padding: 21px 53px;
+}
+.mask_group_img {
+    width: 100%;
+    margin-left: 2px;
+    margin-top: 20px;
+  }
+  .browse_range h2 {
+    font-size: 27px;}
+    .browse_range p {
+        font-size: 18px;}
+        .range_image .img_hoverly{
+            width:100%;
+      border-radius: 50px;
+      background: #1f509a00;
+      
+      }
+      #work {
+        padding-top: 34px;
+      }
+      .work_head h2 {
+        font-size: 27px;}
+        .work_head p {
+            font-size: 18px;}
+            .work_image_container h2 {
+                font-size: 22px;}
+                .work_image_container p {
+                    font-size: 17px;}
+                    .work_image_container .two_no_parent{
+                        margin-top: 15px;
+                    }
+                    
+                    #mailing {
+                        margin-top: 82px;}
+                        .mail_container h2 {
+                            font-size: 27px;}
+                            .mail_container .mail_text p {
+                                font-size: 18px;}
+                                .mail_container .form {
+                                    width: 100%;
+                                    
+                                    margin-left: 5px};
+                                    .beauty_care h4 {
+                                        font-size: 22px;
+                                        text-align: center;
+                                    }
+                                        .beauty_care p {
+                                            font-size: 15px;
+                                            margin-top: 26px !important;
+                                        }
+                                            .insta_shop h4 {
+                                                font-size: 22px;
+                                            text-align: center;
+                                        margin-top:10px !important;
+                                        }
+                  .insta{
+                    justify-content: center;
+                  }                          
+              .insta1{
+                width:40%;
+                margin-bottom: 5px;
+              }     
+}
+/*----- media query for medium device----- */
+/* ----media query for large device---- */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    /*---- nav bar start  ----*/
+    .main_menu{
+        width:100%;
+    }
+    .main_menu ul{
+        gap:30px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       }
+    .main_menu ul li a{
+    font-size:17px;
+    font-weight:600;
+    font-family:var(--montserrat);
+    color:var(--primaryColor) !important;
+    position:relative;
+    padding:0 !important;
+    margin-top: 30px;
+    }
+    .main_menu ul li a:hover{
+        box-shadow:5px 5px 5px 2px var(--BrandColor) ;
+    }
+/* ----nav bar part end----- */
+/* -------banner part start ------*/
+.banner_main_card h1 {
+    font-size: 48px;}
+    .banner_card .banner_main_card {
+        width: 633px;}
+    .banner_main_card a button {
+        width: 212px;
+        height: 67px;
+        font-size: 15px;}
+        .single_support .supportImage {
+            width: 81px;
+          }
+        .single_support .time_image {
+            width: 80px;
+          }
+          .single_support .shield_image {
+            width: 80px;
+          }
+        
+          .inspiration_row .inspiration_image:hover{
+            margin-top:0px;
+        }
+
+        .inspiration_row {
+            margin-top: 68px !important;
+            gap: 20px;
+          }
+          #beautify {
+            padding-top: 42px;
+            margin-top: 29px;
+            padding-bottom: 60px;}
+          .beautify_space {
+            margin-top: 2px;
+          }
+          .beautify_space h4 {
+            font-size: 30px}
+            .beautify_space p {
+                font-size: 18px;}
+                .beautify_space a button {
+                    font-size: 14px;
+                    padding: 22px 55px;
+ }
+ .range_image .img_hoverly .flaticons{
+    width:35px;
+    height:35px;
+}
+.range_image .img_hoverly button{
+    background: transparent;
+border:0;
+font-size:20px;
+font-weight:400;
+font-family:"Adamina",serif;
+color:black;
+background:teal ;
+border-radius: 50%;
+padding: 10px;
+border:2px solid coral;
+box-shadow: 0 0 10px coral;
+}
+.range_image .img_hoverly button span{
+    
+    
+    font-size:20px;
+
+}
+ .mask_group_img {
+    margin-top:10px;
+    margin-left: 5px;}
+
+    .range_image .img_hoverly{
+  background: #1f509a00;
+  
+  }
+  .mail_container .form {
+    margin-left: 125px;
+    flex-wrap:wrap;
+    margin-bottom: 100px;
+    margin-left:auto;
+    margin-right:auto;
+    gap:10px;
+  }
+  .mail_container .form input {
+    width: 80%;
+border: 5px dotted var(--BrandColor);
+}
+    .mail_container .form button {
+        
+        width: 80%;
+    height:90px;}
+    .insta{
+        gap:10px;
+    justify-content: center;
+    }
+    .beauty_care h4{
+        text-align: center;
+    }
+    .ship_p{
+        margin-bottom:15px;
+    }
+    .insta_shop h4{
+        text-align: center;
+    }
+    .insta_shop .instagram_image {
+        margin-top: 30px;
+      }
+     .beauty_care{
+    padding:20px;    
+     }    
+.insta1{
+width:20%;   
+}
+#mailing {
+    background: #F2F5FF;
+    padding-top: 59px;
+    margin-top: 79px;}
+}
+@media (min-width:992px) and (max-width:1100.98px){
+    .mask_group_img {
+        width: 100%;
+        height: 750px;
+        margin-left: 16px;}
+    .mail_container .form {
+    margin-left: 242px;
+}
+.range_image .img_hoverly{
+    background: #1f509a00;
+    
+    }
+    .range_image .img_hoverly .flaticons{
+        width:20px;
+        height:20px;
+    }
+    .range_image .img_hoverly button{
+        background: transparent;
+    border:0;
+    font-size:18px;
+    font-weight:400;
+    font-family:"Adamina",serif;
+    color:black;
+    background:teal ;
+    border-radius: 50%;
+    padding: 10px;
+    border:2px solid coral;
+    box-shadow: 0 0 10px coral;
+    }
+    .range_image .img_hoverly button span{
+        
+        
+        font-size:20px;
+    
+    }
+}
+
+/* -----------footer-----------------*/
